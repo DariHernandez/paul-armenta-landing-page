@@ -1,5 +1,75 @@
 .hero
-    display: none
-    background: #393a3c
-    background: -webkit-linear-gradient(to right, #24243e, rgba(#d1eafe, 0), #393a3c)
-    background: linear-gradient(to right, #24243e, rgba(#d1eafe, 0), #393a3c)
+    background: rgb(35,36,37)
+    background: -moz-linear-gradient(90deg, rgba(35,36,37,1) 0%, rgba(57,58,60,1) 49%, rgba(35,36,37,1) 100%)
+    background: -webkit-linear-gradient(90deg, rgba(35,36,37,1) 0%, rgba(57,58,60,1) 49%, rgba(35,36,37,1) 100%)
+    background: linear-gradient(90deg, rgba(35,36,37,1) 0%, rgba(57,58,60,1) 49%, rgba(35,36,37,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#232425",endColorstr="#232425",GradientType=1)
+    padding-top: 10px
+    position: relative
+    overflow: hidden
+
+    .content
+        margin-top: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+
+        .right, .left
+            width: 50%
+
+        h1
+            font-size: 38px
+            color: rgba($color_a, 0.6)
+
+            span:first-child
+                color: $color_c
+                font-size: 30px
+
+            span:last-child
+                color: rgba($color_a, 1)
+                font-style: italic
+                font-size: 42px
+
+        p
+            width: auto
+            margin: 15px 20px
+
+            span
+                font-weight: bold
+            
+
+        .photo
+            width: 90%
+            height: 100%
+
+    .logo
+        position: absolute
+        z-index: 1
+        border-radius: 50%
+        overflow: hidden
+        position: absolute
+
+        &.a
+            width: 120px
+            height: auto       
+            transform: rotateZ(10deg)
+            right: 15%
+            top: 60%
+
+        &.b
+            width: 300px
+            height: auto       
+            transform: rotateZ(-25deg)
+            left: -10%
+            bottom: -20%
+            opacity: 0.2
+
+        &.c
+            width: 400px
+            height: auto       
+            transform: rotateZ(25deg)
+            right: -20%
+            top: -15%
+            opacity: 0.2
+
