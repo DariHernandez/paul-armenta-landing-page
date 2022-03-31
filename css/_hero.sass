@@ -51,25 +51,46 @@
         position: absolute
 
         &.a
-            width: 120px
-            height: auto       
-            transform: rotateZ(10deg)
-            right: 15%
-            top: 60%
-
-        &.b
-            width: 300px
+            width: 25vw
             height: auto       
             transform: rotateZ(-25deg)
             left: -10%
             bottom: -20%
             opacity: 0.2
 
-        &.c
-            width: 400px
+        &.b
+            width: 35vw
             height: auto       
             transform: rotateZ(25deg)
             right: -20%
             top: -15%
             opacity: 0.2
 
+    @media screen and (max-width: 1050px)
+        .content
+            display: block
+            padding-bottom: 30px
+
+            .left
+                width: 80%
+                margin: 0 auto
+
+            .photo
+                display: none
+
+        .logo
+            display: none
+
+    @media screen and (max-width: 550px)
+        .content
+            .left
+                width: 90%
+
+            h1
+                font-size: 18px
+
+                span:first-child
+                    font-size: 20px
+
+                span:last-child
+                    font-size: 28px

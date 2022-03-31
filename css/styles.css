@@ -235,27 +235,50 @@ header.regular-width nav ul li:last-child i {
   position: absolute;
 }
 .hero .logo.a {
-  width: 120px;
-  height: auto;
-  transform: rotateZ(10deg);
-  right: 15%;
-  top: 60%;
-}
-.hero .logo.b {
-  width: 300px;
+  width: 25vw;
   height: auto;
   transform: rotateZ(-25deg);
   left: -10%;
   bottom: -20%;
   opacity: 0.2;
 }
-.hero .logo.c {
-  width: 400px;
+.hero .logo.b {
+  width: 35vw;
   height: auto;
   transform: rotateZ(25deg);
   right: -20%;
   top: -15%;
   opacity: 0.2;
+}
+@media screen and (max-width: 1050px) {
+  .hero .content {
+    display: block;
+    padding-bottom: 30px;
+  }
+  .hero .content .left {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero .content .photo {
+    display: none;
+  }
+  .hero .logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .hero .content .left {
+    width: 90%;
+  }
+  .hero .content h1 {
+    font-size: 18px;
+  }
+  .hero .content h1 span:first-child {
+    font-size: 20px;
+  }
+  .hero .content h1 span:last-child {
+    font-size: 28px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
