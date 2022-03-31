@@ -75,15 +75,19 @@ a {
   box-shadow: inset 4px 4px 8px 2px rgba(0, 0, 0, 0.5);
 }
 
-header.regular-width {
+header {
   margin-top: 20px;
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
 }
-header.regular-width nav {
+header nav {
   margin: 0;
   padding: 0;
 }
-header.regular-width nav ul {
+header nav ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -91,71 +95,74 @@ header.regular-width nav ul {
   justify-content: flex-end;
   width: 100%;
 }
-header.regular-width nav ul li {
+header nav ul li {
   list-style: none;
   display: inline-block;
   width: auto;
   height: auto;
 }
-header.regular-width nav ul li .wrapper-arrow {
+header nav ul li .wrapper-arrow {
   display: none;
 }
-header.regular-width nav ul li a {
+header nav ul li a {
   padding: 15px;
   color: rgba(246, 246, 248, 0.5);
   transition-duration: 0.5s;
   display: inline-block;
 }
-header.regular-width nav ul li a:hover {
+header nav ul li a:hover {
   color: #f6f6f8;
   font-size: 120%;
 }
-header.regular-width nav ul li i {
+header nav ul li i {
   border-right: 1px solid rgba(209, 234, 254, 0.2);
 }
-header.regular-width nav ul li:last-child i {
+header nav ul li:nth-child(4) i {
   border: none;
 }
-@media screen and (max-width: 800px) {
-  header.regular-width nav ul {
+@media screen and (max-width: 1050px) {
+  header nav ul {
     justify-content: center;
   }
 }
 @media screen and (max-width: 550px) {
-  header.regular-width {
+  header {
     margin: 0;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: -150px;
+    position: relative;
+    display: block;
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin-top: -155px;
     transition-duration: 0.5s;
   }
-  header.regular-width.open {
-    top: 0;
+  header.open {
+    margin-top: 0;
   }
-  header.regular-width.open nav ul li .wrapper-arrow .arrow {
+  header.open nav ul li .wrapper-arrow .arrow {
     transform: rotateZ(90deg);
   }
-  header.regular-width nav {
+  header nav {
     width: 100%;
     margin-top: 20px;
   }
-  header.regular-width nav ul {
+  header nav ul {
     flex-direction: column;
   }
-  header.regular-width nav ul li {
+  header nav ul li {
     width: 100%;
     text-align: center;
   }
-  header.regular-width nav ul li .wrapper-arrow {
+  header nav ul li .wrapper-arrow {
     display: block;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: -80px;
+    margin-top: 10px;
   }
-  header.regular-width nav ul li .wrapper-arrow .arrow {
-    fill: #d1eafe;
+  header nav ul li .wrapper-arrow .arrow {
+    fill: #f6f6f8;
     width: 30px;
     height: 30px;
     padding: 20px;
@@ -165,20 +172,18 @@ header.regular-width nav ul li:last-child i {
     outline: none;
     box-shadow: none;
   }
-  header.regular-width nav ul li .wrapper-arrow .arrow:focus {
+  header nav ul li .wrapper-arrow .arrow:focus {
     outline: none;
     box-shadow: none;
   }
-  header.regular-width nav ul li .wrapper-arrow:hover .arrow {
-    width: 40px;
-    height: 40px;
-    fill: #f6f6f8;
+  header nav ul li .wrapper-arrow:hover .arrow {
+    fill: #fcb549;
   }
-  header.regular-width nav ul li a {
+  header nav ul li a {
     padding: 5px 0;
     width: 100%;
   }
-  header.regular-width nav ul li i {
+  header nav ul li i {
     border: none;
   }
 }
@@ -194,7 +199,7 @@ header.regular-width nav ul li:last-child i {
   overflow: hidden;
 }
 .hero .content {
-  margin-top: 50px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,7 +244,7 @@ header.regular-width nav ul li:last-child i {
   height: auto;
   transform: rotateZ(-25deg);
   left: -10%;
-  bottom: -20%;
+  top: -15%;
   opacity: 0.2;
 }
 .hero .logo.b {
@@ -247,7 +252,7 @@ header.regular-width nav ul li:last-child i {
   height: auto;
   transform: rotateZ(25deg);
   right: -20%;
-  top: -15%;
+  bottom: -20%;
   opacity: 0.2;
 }
 @media screen and (max-width: 1050px) {
