@@ -211,6 +211,7 @@ header nav ul li:nth-child(4) i {
 .hero .content h1 {
   font-size: 38px;
   color: rgba(246, 246, 248, 0.6);
+  margin-top: -50px;
 }
 .hero .content h1 span:first-child {
   color: #fcb549;
@@ -284,6 +285,130 @@ header nav ul li:nth-child(4) i {
   .hero .content h1 span:last-child {
     font-size: 28px;
   }
+}
+
+.iphone {
+  padding-top: 100px;
+  background-color: #d1eafe;
+  position: relative;
+}
+.iphone .content.regular-width {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 600px;
+}
+.iphone .content.regular-width .left {
+  position: absolute;
+  left: 0;
+  margin-bottom: 150px;
+  width: 50%;
+  color: #393a3c;
+  text-align: center;
+}
+.iphone .content.regular-width .left span {
+  font-weight: bold;
+}
+.iphone .content.regular-width .left h2 {
+  font-size: 25px;
+  font-weight: normal;
+}
+.iphone .content.regular-width .left p {
+  width: 80%;
+  margin: 0 auto;
+}
+.iphone .content.regular-width .left p:last-child {
+  font-size: 12px;
+}
+.iphone .content.regular-width .right {
+  z-index: 1;
+  margin-top: 100px;
+  position: absolute;
+  right: -10%;
+  height: auto;
+  width: 80%;
+}
+.iphone .divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: -50px;
+  z-index: 2;
+}
+.iphone .divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+.iphone .divider-top .shape-fill {
+  fill: #D1EAFE;
+}
+.iphone .divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.iphone .divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 49px;
+}
+.iphone .divider-bottom .shape-fill {
+  fll: #393a3c;
+}
+.iphone .icon.regular.instagram {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  top: 10%;
+  right: 25%;
+}
+.iphone .icon.regular.facebook {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 35%;
+  right: 26%;
+}
+.iphone .icon.regular.twitter {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 15%;
+  right: 45%;
+}
+.iphone .icon.background.instagram {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  right: -15%;
+  filter: blur(20px);
+  opacity: 0.2;
+  transform: rotate(45deg);
+}
+.iphone .icon.background.facebook {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  bottom: 0;
+  left: -15%;
+  filter: blur(20px);
+  opacity: 0.15;
+  transform: rotate(-20deg);
+}
+.iphone .icon.background.twitter {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
