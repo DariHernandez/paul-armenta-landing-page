@@ -260,6 +260,7 @@ header nav ul li:nth-child(4) i {
   .hero .content {
     display: block;
     padding-bottom: 30px;
+    margin-top: 120px;
   }
   .hero .content .left {
     width: 80%;
@@ -291,43 +292,49 @@ header nav ul li:nth-child(4) i {
   padding-top: 100px;
   background-color: #d1eafe;
   position: relative;
+  height: 650px;
 }
-.iphone .content.regular-width {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 600px;
-}
-.iphone .content.regular-width .left {
+.iphone .content {
   position: absolute;
   left: 0;
-  margin-bottom: 150px;
-  width: 50%;
+  top: 25%;
+  width: 500px;
   color: #393a3c;
   text-align: center;
+  margin-left: calc((100vw - 1000px) / 2);
 }
-.iphone .content.regular-width .left span {
+.iphone .content span {
   font-weight: bold;
 }
-.iphone .content.regular-width .left h2 {
+.iphone .content h2 {
   font-size: 25px;
   font-weight: normal;
 }
-.iphone .content.regular-width .left p {
+.iphone .content p {
   width: 80%;
   margin: 0 auto;
 }
-.iphone .content.regular-width .left p:last-child {
+.iphone .content p:last-child {
   font-size: 12px;
 }
-.iphone .content.regular-width .right {
-  z-index: 1;
-  margin-top: 100px;
+.iphone .mockup {
   position: absolute;
-  right: -10%;
+  top: -100px;
+  width: 100%;
+  height: 850px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1;
+  margin-top: 150px;
+}
+.iphone .mockup .wrapper-img {
+  margin-left: calc((100vw - 1000px) / 2 + 350px);
+  position: absolute;
+  top: 0;
+  left: 0;
   height: auto;
-  width: 80%;
+  width: 60%;
+  max-width: 825px;
 }
 .iphone .divider-top {
   position: absolute;
@@ -336,7 +343,7 @@ header nav ul li:nth-child(4) i {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  margin-top: -50px;
+  margin-top: -48px;
   z-index: 2;
 }
 .iphone .divider-top svg {
@@ -366,28 +373,15 @@ header nav ul li:nth-child(4) i {
 .iphone .divider-bottom .shape-fill {
   fll: #393a3c;
 }
-.iphone .icon.regular.instagram {
-  width: 130px;
-  height: 130px;
+.iphone .wrapper-icons {
   position: absolute;
-  top: 10%;
-  right: 25%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
 }
-.iphone .icon.regular.facebook {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 35%;
-  right: 26%;
-}
-.iphone .icon.regular.twitter {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  bottom: 15%;
-  right: 45%;
-}
-.iphone .icon.background.instagram {
+.iphone .wrapper-icons .icon.instagram {
   width: 500px;
   height: 500px;
   position: absolute;
@@ -397,7 +391,7 @@ header nav ul li:nth-child(4) i {
   opacity: 0.2;
   transform: rotate(45deg);
 }
-.iphone .icon.background.facebook {
+.iphone .wrapper-icons .icon.facebook {
   width: 600px;
   height: 600px;
   position: absolute;
@@ -407,8 +401,64 @@ header nav ul li:nth-child(4) i {
   opacity: 0.15;
   transform: rotate(-20deg);
 }
-.iphone .icon.background.twitter {
-  display: none;
+@media screen and (max-width: 1400px) {
+  .iphone .content {
+    width: 40%;
+  }
+  .iphone .mockup .wrapper-img {
+    width: 750px;
+    margin-left: calc((100vw - 1000px) / 2 + 30%);
+  }
+}
+@media screen and (max-width: 1050px) {
+  .iphone .wrapper-icons .icon.instagram {
+    right: -35%;
+  }
+  .iphone .wrapper-icons .icon.facebook {
+    left: -35%;
+  }
+  .iphone .content {
+    width: 400px;
+    z-index: 2;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: #d1eafe;
+    box-shadow: 2px 2px 15px -3px #393a3c;
+  }
+  .iphone .content h2 {
+    margin-top: 0;
+  }
+  .iphone .mockup {
+    z-index: 1;
+  }
+  .iphone .mockup .wrapper-img {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .iphone .divider-bottom {
+    bottom: -2px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .iphone .mockup .wrapper-img {
+    width: 100%;
+  }
+  .iphone .mockup .wrapper-img img {
+    width: 750px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  .iphone .wrapper-icons {
+    display: none;
+  }
+  .iphone .content {
+    width: calc(90% - 80px);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
