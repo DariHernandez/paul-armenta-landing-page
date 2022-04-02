@@ -395,7 +395,7 @@ header nav ul li:nth-child(4) i {
   height: 49px;
 }
 .iphone .divider-bottom .shape-fill {
-  fll: #393a3c;
+  fill: #393a3c;
 }
 .iphone .wrapper-icons {
   position: absolute;
