@@ -1,0 +1,66 @@
+footer
+    background-color: rgba($color_b, 0.1)
+    margin-top: 50px
+
+    .content
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .socials
+            display: flex
+            align-items: flex-start
+            justify-content: center
+            
+            .social
+                width: 20px
+                height: 20px
+                padding: 5px
+                transition-duration: $transition-duration
+
+                &:hover
+                    width: 25px
+                    height: 25px
+
+
+        address
+            font-size: 12px
+            margin: 5px
+
+            a
+                text-align: center
+                transition-duration: $transition-duration
+                
+                &:hover
+                    font-size: 14px
+                    text-decoration: underline
+
+    @media screen and (max-width: 1050px)
+        .content
+            width: 90%
+
+    @media screen and (max-width: 768px)
+        .content
+            .socials
+                .social
+                    width: 25px
+                    height: 25px
+                    padding: 10px
+
+                    &:hover
+                        width: 30px
+                        height: 30px
+
+    @media screen and (max-width: 550px)
+        .content
+            flex-direction: column
+
+            .socials
+                .social
+                    width: 30px
+                    height: 30px
+
+                    &:hover
+                        width: 35px
+                        height: 35px
+    

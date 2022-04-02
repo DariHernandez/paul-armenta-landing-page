@@ -584,4 +584,70 @@ header nav ul li:nth-child(4) i {
   }
 }
 
+footer {
+  background-color: rgba(209, 234, 254, 0.1);
+  margin-top: 50px;
+}
+footer .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .content .socials {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+footer .content .socials .social {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  transition-duration: 0.5s;
+}
+footer .content .socials .social:hover {
+  width: 25px;
+  height: 25px;
+}
+footer .content address {
+  font-size: 12px;
+  margin: 5px;
+}
+footer .content address a {
+  text-align: center;
+  transition-duration: 0.5s;
+}
+footer .content address a:hover {
+  font-size: 14px;
+  text-decoration: underline;
+}
+@media screen and (max-width: 1050px) {
+  footer .content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .content .socials .social {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+  }
+  footer .content .socials .social:hover {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  footer .content {
+    flex-direction: column;
+  }
+  footer .content .socials .social {
+    width: 30px;
+    height: 30px;
+  }
+  footer .content .socials .social:hover {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
