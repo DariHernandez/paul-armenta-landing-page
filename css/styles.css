@@ -780,4 +780,97 @@ footer .content address a:hover {
   }
 }
 
+.ecommerce {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.ecommerce .wrapper-form h1 {
+  color: #d1eafe;
+  text-align: center;
+  margin-top: 100px;
+}
+.ecommerce .wrapper-form .card {
+  width: calc(100% - 110px);
+  margin: 50px auto;
+  border-radius: 50px;
+  background-color: rgba(209, 234, 254, 0.1);
+  padding: 50px 30px;
+  margin-bottom: 100px;
+  padding-left: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ecommerce .wrapper-form .card .decorator {
+  position: absolute;
+  top: 120px;
+  left: -53px;
+  padding: 0 30px;
+  transform: rotateZ(-90deg);
+  background-color: #fcb549;
+  color: #393a3c;
+  font-weight: bold;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.ecommerce .wrapper-form .card .left, .ecommerce .wrapper-form .card .right {
+  width: 49%;
+}
+.ecommerce .wrapper-form .card .left {
+  text-align: center;
+}
+.ecommerce .wrapper-form .card .left h2 {
+  font-size: 20px;
+  color: rgba(246, 246, 248, 0.5);
+  line-height: 32px;
+  font-style: italic;
+}
+.ecommerce .wrapper-form .card .left h2 span {
+  font-size: 25px;
+  color: #fcb549;
+}
+.ecommerce .wrapper-form .card .left ul li {
+  text-align: left;
+}
+.ecommerce .wrapper-form .card .left .icon {
+  width: 100%;
+  height: 40px;
+}
+.ecommerce .wrapper-form .card .left .icon svg {
+  height: 100%;
+  width: auto;
+  fill: #fcb549;
+  transform: rotateZ(180deg);
+}
+.ecommerce .wrapper-form .card .right {
+  height: 500px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.ecommerce .wrapper-form .card .right iframe {
+  width: 100%;
+  height: 500px;
+}
+@media screen and (max-width: 1050px) {
+  .ecommerce .wrapper-form .card {
+    width: calc(90% - 110px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .ecommerce .wrapper-form .card {
+    padding: 30px 15px;
+    width: calc(90% - 60px);
+  }
+  .ecommerce .wrapper-form .card .decorator {
+    display: none;
+  }
+  .ecommerce .wrapper-form h1 {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
