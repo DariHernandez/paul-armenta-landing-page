@@ -56,99 +56,105 @@
             </h1>
     
             <form action="https://darideveloper.pythonanywhere.com/" method="post">
-                <label>
-                    Nombre
-                    <input type="text" name="name" id="name" required>
-                </label>
-                <label>
-                    Email
-                    <input type="email" name="email" id="email" required>
-                </label>
-                <label>
-                    WhatsApp
-                    <input type="tel" name="whatsapp" id="whatsapp" required>
-                </label>
-                <label>
-                    URL de la tienda
-                    <input type="url" name="url" id="url" required>
-                </label>
+                <fieldset class="inputs">
+                    <fieldset class="left">
+                        <label>
+                            Nombre
+                            <input type="text" name="name" id="name" placeholder="Paul Armenta" required>
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" name="email" id="email" placeholder="myemail@gmail.com" required>
+                        </label>
+                        <label>
+                            WhatsApp
+                            <input type="tel" name="whatsapp" id="whatsapp" placeholder="+521234567890" required>
+                        </label>
+                        <label>
+                            URL de la tienda
+                            <input type="url" name="url" id="url" placeholder="https://www.mysite.com/" required>
+                        </label>
+            
+                        <fieldset>
+                            <p>
+                                Inversión mensual actual en gasto publicitario (Incluyendo Facebook Ads y Google Ads u otra plataforma que estés usando)
+                            </p>
+            
+                            <label class="select">
+                                <input type="radio" name="inversion" id="inversion-a" value="Hasta $10,000 MXN" required>
+                                Hasta $10,000 MXN
+                            </label>
+                            <label class="select">
+                                <input type="radio" name="inversion" id="inversion-b" value="Hasta $50,000 MXN" required>
+                                Hasta $50,000 MXN
+                            </label>
+                            <label class="select">
+                                <input type="radio" name="inversion" id="inversion-c" value="Hasta $100,000 MXN" required>
+                                Hasta $100,000 MXN
+                            </label>
+                            <label class="select">
+                                <input type="radio" name="inversion" id="inversion-d" value="Más de $100,000 MXN" required>
+                                Más de $100,000 MXN
+                            </label>
+                        </fieldset>
+                    </fieldset>
     
-                <fieldset>
-                    <p>
-                        Inversión mensual actual en gasto publicitario (Incluyendo Facebook Ads y Google Ads u otra plataforma que estés usando)
-                    </p>
-    
-                    <label>
-                        <input type="radio" name="inversion" id="inversion-a" value="Hasta $10,000 MXN" required>
-                        Hasta $10,000 MXN
-                    </label>
-                    <label>
-                        <input type="radio" name="inversion" id="inversion-b" value="Hasta $50,000 MXN" required>
-                        Hasta $50,000 MXN
-                    </label>
-                    <label>
-                        <input type="radio" name="inversion" id="inversion-c" value="Hasta $100,000 MXN" required>
-                        Hasta $100,000 MXN
-                    </label>
-                    <label>
-                        <input type="radio" name="inversion" id="inversion-d" value="Más de $100,000 MXN" required>
-                        Más de $100,000 MXN
-                    </label>
+                    <fieldset class="right">
+                        <label>
+                            Ventas mensuales de tu tienda en línea
+                            <input type="number" name="ventas" id="ventas" placeholder="5000" required>
+                        </label>
+            
+                        <fieldset>
+                            <p>
+                                ¿Actualmente qué canales de venta estás usando? 
+                            </p>
+            
+                            <label class="select">
+                                <input type="checkbox" name="canales" id="canal.a" value="Facebook & Instagram Ads">
+                                Facebook & Instagram Ads
+                            </label>
+            
+                            <label class="select">
+                                <input type="checkbox" name="canales" id="canal-b" value="Google Ads">
+                                Google Ads
+                            </label>
+            
+                            <label class="select">
+                                <input type="checkbox" name="canales" id="canal-c" value="Email Marketing">
+                                Email Marketing
+                            </label>
+            
+                            <label class="select">
+                                <input type="checkbox" name="canales" id="canal-d" value="Otros">
+                                Otros
+                            </label>
+                        </fieldset>
+            
+                        <label class="hide">
+                            Otros canales
+                            <input type="text" name="canales-otros" id="canales-otros" placeholder="twitter, youtube, tiktok, etc">
+                        </label>
+            
+                        <label>
+                            Ticket promedio
+                            <input type="number" name="ticket" id="ticket" placeholder="525.12" required>
+                        </label>
+            
+                        <label>
+                            Porcentaje de recompra
+                            <input type="text" name="recompra" id="recompra" placeholder="20.56" pattern="^[0-9]{2}(\.[0-9]{2})?$" maxlength="5" required>
+                        </label>
+            
+                        <label>
+                            Porcentaje de conversión
+                            <input type="text" name="conversion" id="conversion" placeholder="30.12" pattern="^[0-9]{2}(\.[0-9]{2})?$" maxlength="5" required>
+                        </label>
+            
+                    </fieldset>
                 </fieldset>
-    
-                <label>
-                    Ventas mensuales de tu tienda en línea
-                    <input type="number" name="ventas" id="ventas" required>
-                </label>
-    
-                <fieldset>
-                    <p>
-                        ¿Actualmente qué canales de venta estás usando? 
-                    </p>
-    
-                    <label>
-                        <input type="checkbox" name="canales" id="canal.a" value="Facebook & Instagram Ads">
-                        Facebook & Instagram Ads
-                    </label>
-    
-                    <label>
-                        <input type="checkbox" name="canales" id="canal-b" value="Google Ads">
-                        Google Ads
-                    </label>
-    
-                    <label>
-                        <input type="checkbox" name="canales" id="canal-c" value="Email Marketing">
-                        Email Marketing
-                    </label>
-    
-                    <label>
-                        <input type="checkbox" name="canales" id="canal-d" value="Otros">
-                        Otros
-                    </label>
-                </fieldset>
-    
-                <label class="hide">
-                    Otros canales
-                    <input type="text" name="canales-otros" id="canales-otros">
-                </label>
-    
-                <label>
-                    Ticket promedio
-                    <input type="number" name="ticket" id="ticket" required>
-                </label>
-    
-                <label>
-                    Porcentaje de recompra
-                    <input type="text" name="recompra" id="recompra" pattern="\d*" maxlength="2" required>
-                </label>
-    
-                <label>
-                    Porcentaje de conversión
-                    <input type="text" name="conversion" id="conversion" pattern="\d*" maxlength="2" required>
-                </label>
-    
-                <input type="submit" value="Enviar">
-    
+                
+                <input type="submit" value="Enviar" class="btn service">
                 <input type="text" name="api_key" id="api_key" value="paularmenta_834c0e2e1042ed26b295" class="hide">
                 <input type="text" name="redirect" id="redirect" value="http://localhost/testsite/thanks.html" class="hide">
     

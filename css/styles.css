@@ -486,6 +486,9 @@ header nav ul li:nth-child(4) i {
   }
 }
 
+.services {
+  margin-bottom: 50px;
+}
 .services h2 {
   color: #d1eafe;
   text-align: center;
@@ -589,7 +592,6 @@ header nav ul li:nth-child(4) i {
 
 footer {
   background-color: rgba(209, 234, 254, 0.1);
-  margin-top: 50px;
 }
 footer .content {
   display: flex;
@@ -651,6 +653,92 @@ footer .content address a:hover {
     width: 35px;
     height: 35px;
   }
+}
+
+.ecommerce {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.ecommerce .wrapper-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.ecommerce .wrapper-form h1 {
+  color: #d1eafe;
+  text-align: center;
+  margin-top: 100px;
+}
+.ecommerce .wrapper-form form {
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 50px;
+  background-color: rgba(209, 234, 254, 0.1);
+  padding: 50px 30px;
+  margin-bottom: 100px;
+}
+.ecommerce .wrapper-form form .inputs {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.ecommerce .wrapper-form form .inputs .left, .ecommerce .wrapper-form form .inputs .right {
+  width: 48%;
+}
+.ecommerce .wrapper-form form .inputs label, .ecommerce .wrapper-form form .inputs p {
+  display: block;
+  font-size: 14px;
+  margin: 10px;
+}
+.ecommerce .wrapper-form form .inputs label {
+  transition-duration: 0.5s;
+}
+.ecommerce .wrapper-form form .inputs label:hover {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fcb549;
+}
+.ecommerce .wrapper-form form .inputs label:hover input {
+  margin-left: -10px;
+  width: calc(100% - 30px);
+}
+.ecommerce .wrapper-form form .inputs label.select {
+  cursor: pointer;
+}
+.ecommerce .wrapper-form form .inputs label.select:hover {
+  margin: 10px;
+}
+.ecommerce .wrapper-form form .inputs label.select:hover input {
+  margin-left: 0;
+  width: auto;
+}
+.ecommerce .wrapper-form form .inputs input {
+  display: block;
+  outline: none;
+  border: none;
+  margin-top: 5px;
+  width: calc(100% - 40px);
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #393a3c;
+  color: #f6f6f8;
+  padding: 5px 20px;
+  transition-duration: 0.5s;
+}
+.ecommerce .wrapper-form form .inputs input:focus {
+  font-size: 20px;
+}
+.ecommerce .wrapper-form form .inputs input[type=checkbox], .ecommerce .wrapper-form form .inputs input[type=radio] {
+  width: auto;
+  display: inline;
+}
+.ecommerce .wrapper-form form input[type=submit] {
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

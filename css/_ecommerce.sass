@@ -1,0 +1,91 @@
+.ecommerce
+    position: relative
+    width: 100%
+    overflow: hidden
+
+    .wrapper-form
+
+        fieldset
+            border: none
+            padding: 0
+            margin: 0
+
+        h1
+            color: $color_b
+            text-align: center
+            margin-top: 100px
+        
+        form
+            width: 80%
+            margin: 50px auto
+            border-radius: 50px
+            background-color: rgba($color_b, 0.1)
+            padding: 50px 30px
+            margin-bottom: 100px
+
+            .inputs
+                width: 100%
+                display: flex
+                align-items: flex-start
+                justify-content: space-between
+
+                .left, .right
+                    width: 48%
+                
+
+
+                label, p
+                    display: block
+                    font-size: 14px
+                    margin: 10px
+
+                label
+                    transition-duration: $transition-duration
+
+                    &:hover
+                        margin-left: 20px
+                        font-size: 16px
+                        font-weight: bold
+                        color: $color_c
+
+                        input
+                            margin-left: -10px
+                            width: calc(100% - 30px)
+
+                    &.select
+                        cursor: pointer
+
+                        &:hover
+                            margin: 10px
+
+                            input
+                                margin-left: 0
+                                width: auto
+
+
+
+                    
+                input
+                    display: block
+                    outline: none
+                    border: none
+                    margin-top: 5px
+                    width: calc(100% - 40px)
+                    font-size: 18px
+                    border-radius: 10px
+                    background-color: $color_d
+                    color: $color_a
+                    padding: 5px 20px
+                    transition-duration: $transition-duration
+
+                    &:focus
+                        font-size: 20px
+
+                    &[type="checkbox"], &[type="radio"]
+                        width: auto
+                        display: inline
+
+            input[type="submit"]
+                margin: 0 auto
+                display: block
+                margin-top: 30px
