@@ -499,6 +499,9 @@ header nav ul li:nth-child(4) i {
   cursor: pointer;
   transition-duration: 0.5s;
 }
+.services .cards .card:focus {
+  outline: none;
+}
 .services .cards .card.even {
   margin-top: 50px;
 }
