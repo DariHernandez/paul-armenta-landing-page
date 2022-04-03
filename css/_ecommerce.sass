@@ -16,12 +16,26 @@
             margin-top: 100px
         
         form
-            width: 80%
+            width: calc(100% - 110px)
             margin: 50px auto
             border-radius: 50px
             background-color: rgba($color_b, 0.1)
             padding: 50px 30px
             margin-bottom: 100px
+            padding-left: 80px
+            position: relative
+
+            .decorator
+                position: absolute
+                top: 120px
+                left: -53px
+                padding: 0 30px
+                transform: rotateZ(-90deg)
+                background-color: $color_c
+                color: $color_d
+                font-weight: bold
+                border-bottom-left-radius: 15px
+                border-bottom-right-radius: 15px
 
             .inputs
                 width: 100%
@@ -93,17 +107,23 @@
     @media screen and (max-width: 1050px)
         .wrapper-form
             form
-                width: 70%
+                width: calc(90% - 110px)
 
 
-    @media screen and (max-width: 550px)
+    @media screen and (max-width: 600px)
         .wrapper-form
             form
+                padding: 30px 15px
+                width: calc(90% - 60px)
+
+                .decorator
+                    display: none
+
                 .inputs
                     flex-direction: column
                 
                     .left, .right
-                        width: 90%
+                        width: 100%
 
             h1
                 width: 90%

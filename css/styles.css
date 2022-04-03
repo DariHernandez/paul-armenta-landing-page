@@ -671,12 +671,26 @@ footer .content address a:hover {
   margin-top: 100px;
 }
 .ecommerce .wrapper-form form {
-  width: 80%;
+  width: calc(100% - 110px);
   margin: 50px auto;
   border-radius: 50px;
   background-color: rgba(209, 234, 254, 0.1);
   padding: 50px 30px;
   margin-bottom: 100px;
+  padding-left: 80px;
+  position: relative;
+}
+.ecommerce .wrapper-form form .decorator {
+  position: absolute;
+  top: 120px;
+  left: -53px;
+  padding: 0 30px;
+  transform: rotateZ(-90deg);
+  background-color: #fcb549;
+  color: #393a3c;
+  font-weight: bold;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .ecommerce .wrapper-form form .inputs {
   width: 100%;
@@ -742,15 +756,22 @@ footer .content address a:hover {
 }
 @media screen and (max-width: 1050px) {
   .ecommerce .wrapper-form form {
-    width: 70%;
+    width: calc(90% - 110px);
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
+  .ecommerce .wrapper-form form {
+    padding: 30px 15px;
+    width: calc(90% - 60px);
+  }
+  .ecommerce .wrapper-form form .decorator {
+    display: none;
+  }
   .ecommerce .wrapper-form form .inputs {
     flex-direction: column;
   }
   .ecommerce .wrapper-form form .inputs .left, .ecommerce .wrapper-form form .inputs .right {
-    width: 90%;
+    width: 100%;
   }
   .ecommerce .wrapper-form h1 {
     width: 90%;
