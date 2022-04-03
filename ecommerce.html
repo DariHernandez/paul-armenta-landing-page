@@ -54,26 +54,22 @@
             Estrategia de tu tienda en linea
         </h1>
 
-        <form action="">
+        <form action="https://darideveloper.pythonanywhere.com/" method="post">
             <label>
                 Nombre
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required>
             </label>
             <label>
                 Email
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
             </label>
             <label>
                 WhatsApp
-                <input type="tel" name="whatsapp" id="whatsapp">
-            </label>
-            <label>
-                WhatsApp
-                <input type="text" name="whatsapp" id="whatsapp">
+                <input type="tel" name="whatsapp" id="whatsapp" required>
             </label>
             <label>
                 URL de la tienda
-                <input type="url" name="url" id="url">
+                <input type="url" name="url" id="url" required>
             </label>
 
             <fieldset>
@@ -82,26 +78,26 @@
                 </p>
 
                 <label>
-                    <input type="radio" name="inversion" id="inversion-a">
+                    <input type="radio" name="inversion" id="inversion-a" required>
                     Hasta $10,000 MXN
                 </label>
                 <label>
-                    <input type="radio" name="inversion" id="inversion-b">
+                    <input type="radio" name="inversion" id="inversion-b" required>
                     Hasta $50,000 MXN
                 </label>
                 <label>
-                    <input type="radio" name="inversion" id="inversion-c">
+                    <input type="radio" name="inversion" id="inversion-c" required>
                     Hasta $100,000 MXN
                 </label>
                 <label>
-                    <input type="radio" name="inversion" id="inversion-d">
+                    <input type="radio" name="inversion" id="inversion-d" required>
                     Más de $100,000 MXN
                 </label>
             </fieldset>
 
             <label>
                 Ventas mensuales de tu tienda en línea
-                <input type="number" name="ventas" id="ventas">
+                <input type="number" name="ventas" id="ventas" required>
             </label>
 
             <fieldset>
@@ -110,56 +106,61 @@
                 </p>
 
                 <label>
-                    <input type="checkbox" name="canales" id="canal a">
+                    <input type="checkbox" name="canales" id="canal.a">
                     Facebook & Instagram Ads
                 </label>
 
                 <label>
-                    <input type="checkbox" name="canales" id="canal a">
+                    <input type="checkbox" name="canales" id="canal-b">
                     Google Ads
                 </label>
 
                 <label>
-                    <input type="checkbox" name="canales" id="canal a">
+                    <input type="checkbox" name="canales" id="canal-c">
                     Email Marketing
                 </label>
 
                 <label>
-                    <input type="checkbox" name="canales" id="canal a">
+                    <input type="checkbox" name="canales" id="canal-d">
                     Otros
                 </label>
             </fieldset>
 
             <label>
                 Otros canales
-                <input type="text" name="canales-otros" id="canales-otros">
+                <input type="text" name="canales-otros" id="canales-otros" class="hide" required>
             </label>
 
             <label>
                 Ticket promedio
-                <input type="number" name="ticket" id="ticket">
+                <input type="number" name="ticket" id="ticket" required>
             </label>
 
             <label>
                 Porcentaje de recompra
-                <input type="number" name="recompra" id="recompra">
+                <input type="text" name="recompra" id="recompra" pattern="\d*" maxlength="2" required>
             </label>
 
             <label>
                 Porcentaje de conversión
-                <input type="number" name="conversion" id="conversion">
+                <input type="text" name="conversion" id="conversion" pattern="\d*" maxlength="2" required>
             </label>
+
+            <input type="submit" value="Enviar">
+
+            <input type="text" name="api_key" id="api_key" value="paularmenta_834c0e2e1042ed26b295" class="hide">
+            <input type="text" name="redirect" id="redirect" value="http://localhost/testsite/thanks.html" class="hide">
 
 
         </form>
 
         <!-- Logos background -->
-        <div class="logo wrapper-img a">
+        <!-- <div class="logo wrapper-img a">
             <img src="./imgs/logo.png" alt="Paul Armenta Logo">
         </div>
         <div class="logo wrapper-img b">
             <img src="./imgs/logo.png" alt="Paul Armenta Logo">
-        </div>
+        </div> -->
     </main>
     
 
