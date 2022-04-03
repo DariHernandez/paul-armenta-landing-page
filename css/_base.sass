@@ -55,3 +55,27 @@ a
 .regular-width
     max-width: $max-width
     margin: 0 auto    
+
+.bg-logos
+    .logo
+        position: absolute
+        z-index: 1
+        border-radius: 50%
+        overflow: hidden
+        position: absolute
+
+        &.a
+            width: 25vw
+            height: auto       
+            transform: rotateZ(-25deg)
+            left: -10%
+            top: -15%
+            opacity: 0.2
+
+        &.b
+            width: 35vw
+            height: auto       
+            transform: rotateZ(25deg)
+            right: -20%
+            bottom: -20%
+            opacity: 0.2

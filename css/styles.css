@@ -51,6 +51,30 @@ a {
   margin: 0 auto;
 }
 
+.bg-logos .logo {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+}
+.bg-logos .logo.a {
+  width: 25vw;
+  height: auto;
+  transform: rotateZ(-25deg);
+  left: -10%;
+  top: -15%;
+  opacity: 0.2;
+}
+.bg-logos .logo.b {
+  width: 35vw;
+  height: auto;
+  transform: rotateZ(25deg);
+  right: -20%;
+  bottom: -20%;
+  opacity: 0.2;
+}
+
 .btn {
   border: none;
   border-radius: 50px;
@@ -256,29 +280,6 @@ header nav ul li:nth-child(4) i {
 .hero .content .photo {
   width: 90%;
   height: 100%;
-}
-.hero .logo {
-  position: absolute;
-  z-index: 1;
-  border-radius: 50%;
-  overflow: hidden;
-  position: absolute;
-}
-.hero .logo.a {
-  width: 25vw;
-  height: auto;
-  transform: rotateZ(-25deg);
-  left: -10%;
-  top: -15%;
-  opacity: 0.2;
-}
-.hero .logo.b {
-  width: 35vw;
-  height: auto;
-  transform: rotateZ(25deg);
-  right: -20%;
-  bottom: -20%;
-  opacity: 0.2;
 }
 @media screen and (max-width: 1050px) {
   .hero .content {
