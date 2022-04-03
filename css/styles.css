@@ -858,13 +858,29 @@ footer .content address a:hover {
     width: calc(90% - 110px);
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .ecommerce .wrapper-form .card {
     padding: 30px 15px;
     width: calc(90% - 60px);
+    flex-direction: column;
   }
   .ecommerce .wrapper-form .card .decorator {
     display: none;
+  }
+  .ecommerce .wrapper-form .card .left, .ecommerce .wrapper-form .card .right {
+    width: 100%;
+  }
+  .ecommerce .wrapper-form .card .left {
+    margin-bottom: 30px;
+  }
+  .ecommerce .wrapper-form .card .left .icon {
+    transform: rotateZ(90deg);
+  }
+  .ecommerce .wrapper-form .card .right {
+    height: 650px;
+  }
+  .ecommerce .wrapper-form .card .right iframe {
+    height: 650px;
   }
   .ecommerce .wrapper-form h1 {
     width: 90%;

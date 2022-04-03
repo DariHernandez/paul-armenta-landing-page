@@ -82,14 +82,30 @@
                 width: calc(90% - 110px)
 
 
-    @media screen and (max-width: 600px)
+    @media screen and (max-width: 800px)
         .wrapper-form
             .card
                 padding: 30px 15px
                 width: calc(90% - 60px)
+                flex-direction: column
 
                 .decorator
                     display: none
+
+                .left, .right
+                    width: 100%
+
+                .left
+                    margin-bottom: 30px
+
+                    .icon
+                        transform: rotateZ(90deg)
+
+                .right
+                    height: 650px
+
+                    iframe
+                        height: 650px
 
             h1
                 width: 90%
