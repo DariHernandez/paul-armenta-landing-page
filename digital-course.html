@@ -43,20 +43,22 @@
         </nav>
     </header>
 
-    <main class="digital-course bg-logos">
-        <div class="wrapper-form regular-width">
-            <h2>
-                Próximamente
-            </h2>
-
+    <main class="digital-course bg-logos landing">
+        <div class="wrapper-landing-card regular-width">
+            
             <h1>
-                Aparta un lugar en nuestro Curso Digital
+                Próximamente
             </h1>
             
-            <form action="https://darideveloper.pythonanywhere.com/" method="post">
+            <h2>
+                Aparta un lugar en nuestro Curso Digital
+            </h2>
+
+            <form class="landing-card" action="https://darideveloper.pythonanywhere.com/" method="post">
                 <div class="decorator">
                     <p>Paul Armenta</p>
                 </div>
+
                 <label>
                     Nombre
                     <input type="text" name="name" id="name" placeholder="Paul Armenta" required>
@@ -68,6 +70,10 @@
                 <label>
                     WhatsApp
                     <input type="tel" name="whatsapp" id="whatsapp" placeholder="+521234567890" required>
+                </label>
+                <label>
+                    Comentarios
+                    <textarea name="comentarios" id="comentarios">Me gustaría saber del curso lo antes posible</textarea>
                 </label>
                                 
                 <input type="submit" value="Enviar" class="btn service">

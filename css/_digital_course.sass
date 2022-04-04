@@ -1,2 +1,68 @@
 .digital-course
-    display: none
+
+    .wrapper-landing-card 
+        
+        fieldset
+            border: none
+            padding: 0
+            margin: 0
+
+        h2
+            color: rgba($color_c, 1)
+            font-style: italic
+            text-align: center
+
+        .landing-card
+            flex-direction: column
+            width: calc(70% - 110px)
+
+            label
+                display: block
+                font-size: 14px
+                margin: 10px
+                transition-duration: $transition-duration
+                width: 90%
+
+                &:hover
+                    margin-left: 20px
+                    font-size: 16px
+                    font-weight: bold
+                    color: $color_c
+
+                    input, textarea
+                        margin-left: -10px
+                        width: calc(100% - 30px)
+        
+                input, textarea
+                    display: block
+                    outline: none
+                    border: none
+                    margin-top: 5px
+                    width: calc(100% - 40px)
+                    font-size: 18px
+                    border-radius: 10px
+                    background-color: $color_d
+                    color: $color_a
+                    padding: 5px 20px
+                    transition-duration: $transition-duration
+
+                    &:focus
+                        font-size: 20px
+                
+                textarea
+                    resize: none
+                    height: 150px
+
+
+            input[type="submit"]
+                margin: 0 auto
+                display: block
+                margin-top: 30px
+
+        @media screen and (max-width: 1050px)
+            .landing-card
+                width: calc(90% - 110px)
+
+        @media screen and (max-width: 800px)
+            .landing-card
+                width: calc(90% - 60px)

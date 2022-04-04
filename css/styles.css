@@ -75,12 +75,17 @@ a {
   opacity: 0.2;
 }
 
-.wrapper-landing-card h1 {
+.landing {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.landing .wrapper-landing-card h1 {
   color: #d1eafe;
   text-align: center;
   margin-top: 100px;
 }
-.wrapper-landing-card .landing-card {
+.landing .wrapper-landing-card .landing-card {
   width: calc(100% - 110px);
   margin: 50px auto;
   border-radius: 50px;
@@ -93,7 +98,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.wrapper-landing-card .landing-card .decorator {
+.landing .wrapper-landing-card .landing-card .decorator {
   position: absolute;
   top: 120px;
   left: -53px;
@@ -106,20 +111,20 @@ a {
   border-bottom-right-radius: 15px;
 }
 @media screen and (max-width: 1050px) {
-  .wrapper-landing-card .landing-card {
+  .landing .wrapper-landing-card .landing-card {
     width: calc(90% - 110px);
   }
 }
 @media screen and (max-width: 800px) {
-  .wrapper-landing-card .landing-card {
+  .landing .wrapper-landing-card .landing-card {
     padding: 30px 15px;
     width: calc(90% - 60px);
     flex-direction: column;
   }
-  .wrapper-landing-card .landing-card .decorator {
+  .landing .wrapper-landing-card .landing-card .decorator {
     display: none;
   }
-  .wrapper-landing-card h1 {
+  .landing .wrapper-landing-card h1 {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -706,20 +711,10 @@ footer .content address a:hover {
   }
 }
 
-.ecommerce {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
 .ecommerce .wrapper-landing-card fieldset {
   border: none;
   padding: 0;
   margin: 0;
-}
-.ecommerce .wrapper-landing-card h1 {
-  color: #d1eafe;
-  text-align: center;
-  margin-top: 100px;
 }
 .ecommerce .wrapper-landing-card .landing-card {
   display: block;
@@ -795,11 +790,6 @@ footer .content address a:hover {
   }
 }
 
-.advisor {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
 .advisor .wrapper-landing-card .landing-card .left, .advisor .wrapper-landing-card .landing-card .right {
   width: 49%;
 }
@@ -856,8 +846,71 @@ footer .content address a:hover {
   }
 }
 
-.digital-course {
-  display: none;
+.digital-course .wrapper-landing-card fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.digital-course .wrapper-landing-card h2 {
+  color: #fcb549;
+  font-style: italic;
+  text-align: center;
+}
+.digital-course .wrapper-landing-card .landing-card {
+  flex-direction: column;
+  width: calc(70% - 110px);
+}
+.digital-course .wrapper-landing-card .landing-card label {
+  display: block;
+  font-size: 14px;
+  margin: 10px;
+  transition-duration: 0.5s;
+  width: 90%;
+}
+.digital-course .wrapper-landing-card .landing-card label:hover {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fcb549;
+}
+.digital-course .wrapper-landing-card .landing-card label:hover input, .digital-course .wrapper-landing-card .landing-card label:hover textarea {
+  margin-left: -10px;
+  width: calc(100% - 30px);
+}
+.digital-course .wrapper-landing-card .landing-card label input, .digital-course .wrapper-landing-card .landing-card label textarea {
+  display: block;
+  outline: none;
+  border: none;
+  margin-top: 5px;
+  width: calc(100% - 40px);
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #393a3c;
+  color: #f6f6f8;
+  padding: 5px 20px;
+  transition-duration: 0.5s;
+}
+.digital-course .wrapper-landing-card .landing-card label input:focus, .digital-course .wrapper-landing-card .landing-card label textarea:focus {
+  font-size: 20px;
+}
+.digital-course .wrapper-landing-card .landing-card label textarea {
+  resize: none;
+  height: 150px;
+}
+.digital-course .wrapper-landing-card .landing-card input[type=submit] {
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+}
+@media screen and (max-width: 1050px) {
+  .digital-course .wrapper-landing-card .landing-card {
+    width: calc(90% - 110px);
+  }
+}
+@media screen and (max-width: 800px) {
+  .digital-course .wrapper-landing-card .landing-card {
+    width: calc(90% - 60px);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
