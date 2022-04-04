@@ -75,6 +75,57 @@ a {
   opacity: 0.2;
 }
 
+.wrapper-landing-card h1 {
+  color: #d1eafe;
+  text-align: center;
+  margin-top: 100px;
+}
+.wrapper-landing-card .landing-card {
+  width: calc(100% - 110px);
+  margin: 50px auto;
+  border-radius: 50px;
+  background-color: rgba(209, 234, 254, 0.1);
+  padding: 50px 30px;
+  margin-bottom: 100px;
+  padding-left: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-landing-card .landing-card .decorator {
+  position: absolute;
+  top: 120px;
+  left: -53px;
+  padding: 0 30px;
+  transform: rotateZ(-90deg);
+  background-color: #fcb549;
+  color: #393a3c;
+  font-weight: bold;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+@media screen and (max-width: 1050px) {
+  .wrapper-landing-card .landing-card {
+    width: calc(90% - 110px);
+  }
+}
+@media screen and (max-width: 800px) {
+  .wrapper-landing-card .landing-card {
+    padding: 30px 15px;
+    width: calc(90% - 60px);
+    flex-direction: column;
+  }
+  .wrapper-landing-card .landing-card .decorator {
+    display: none;
+  }
+  .wrapper-landing-card h1 {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .btn {
   border: none;
   border-radius: 50px;
@@ -660,76 +711,57 @@ footer .content address a:hover {
   width: 100%;
   overflow: hidden;
 }
-.ecommerce .wrapper-form fieldset {
+.ecommerce .wrapper-landing-card fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
-.ecommerce .wrapper-form h1 {
+.ecommerce .wrapper-landing-card h1 {
   color: #d1eafe;
   text-align: center;
   margin-top: 100px;
 }
-.ecommerce .wrapper-form form {
-  width: calc(100% - 110px);
-  margin: 50px auto;
-  border-radius: 50px;
-  background-color: rgba(209, 234, 254, 0.1);
-  padding: 50px 30px;
-  margin-bottom: 100px;
-  padding-left: 80px;
-  position: relative;
+.ecommerce .wrapper-landing-card .landing-card {
+  display: block;
 }
-.ecommerce .wrapper-form form .decorator {
-  position: absolute;
-  top: 120px;
-  left: -53px;
-  padding: 0 30px;
-  transform: rotateZ(-90deg);
-  background-color: #fcb549;
-  color: #393a3c;
-  font-weight: bold;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-.ecommerce .wrapper-form form .inputs {
+.ecommerce .wrapper-landing-card .landing-card .inputs {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-.ecommerce .wrapper-form form .inputs .left, .ecommerce .wrapper-form form .inputs .right {
+.ecommerce .wrapper-landing-card .landing-card .inputs .left, .ecommerce .wrapper-landing-card .landing-card .inputs .right {
   width: 48%;
 }
-.ecommerce .wrapper-form form .inputs label, .ecommerce .wrapper-form form .inputs p {
+.ecommerce .wrapper-landing-card .landing-card .inputs label, .ecommerce .wrapper-landing-card .landing-card .inputs p {
   display: block;
   font-size: 14px;
   margin: 10px;
 }
-.ecommerce .wrapper-form form .inputs label {
+.ecommerce .wrapper-landing-card .landing-card .inputs label {
   transition-duration: 0.5s;
 }
-.ecommerce .wrapper-form form .inputs label:hover {
+.ecommerce .wrapper-landing-card .landing-card .inputs label:hover {
   margin-left: 20px;
   font-size: 16px;
   font-weight: bold;
   color: #fcb549;
 }
-.ecommerce .wrapper-form form .inputs label:hover input {
+.ecommerce .wrapper-landing-card .landing-card .inputs label:hover input {
   margin-left: -10px;
   width: calc(100% - 30px);
 }
-.ecommerce .wrapper-form form .inputs label.select {
+.ecommerce .wrapper-landing-card .landing-card .inputs label.select {
   cursor: pointer;
 }
-.ecommerce .wrapper-form form .inputs label.select:hover {
+.ecommerce .wrapper-landing-card .landing-card .inputs label.select:hover {
   margin: 10px;
 }
-.ecommerce .wrapper-form form .inputs label.select:hover input {
+.ecommerce .wrapper-landing-card .landing-card .inputs label.select:hover input {
   margin-left: 0;
   width: auto;
 }
-.ecommerce .wrapper-form form .inputs input {
+.ecommerce .wrapper-landing-card .landing-card .inputs input {
   display: block;
   outline: none;
   border: none;
@@ -742,151 +774,90 @@ footer .content address a:hover {
   padding: 5px 20px;
   transition-duration: 0.5s;
 }
-.ecommerce .wrapper-form form .inputs input:focus {
+.ecommerce .wrapper-landing-card .landing-card .inputs input:focus {
   font-size: 20px;
 }
-.ecommerce .wrapper-form form .inputs input[type=checkbox], .ecommerce .wrapper-form form .inputs input[type=radio] {
+.ecommerce .wrapper-landing-card .landing-card .inputs input[type=checkbox], .ecommerce .wrapper-landing-card .landing-card .inputs input[type=radio] {
   width: auto;
   display: inline;
 }
-.ecommerce .wrapper-form form input[type=submit] {
+.ecommerce .wrapper-landing-card .landing-card input[type=submit] {
   margin: 0 auto;
   display: block;
   margin-top: 30px;
 }
-@media screen and (max-width: 1050px) {
-  .ecommerce .wrapper-form form {
-    width: calc(90% - 110px);
-  }
-}
 @media screen and (max-width: 600px) {
-  .ecommerce .wrapper-form form {
-    padding: 30px 15px;
-    width: calc(90% - 60px);
-  }
-  .ecommerce .wrapper-form form .decorator {
-    display: none;
-  }
-  .ecommerce .wrapper-form form .inputs {
+  .ecommerce .wrapper-landing-card .landing-card .inputs {
     flex-direction: column;
   }
-  .ecommerce .wrapper-form form .inputs .left, .ecommerce .wrapper-form form .inputs .right {
+  .ecommerce .wrapper-landing-card .landing-card .inputs .left, .ecommerce .wrapper-landing-card .landing-card .inputs .right {
     width: 100%;
-  }
-  .ecommerce .wrapper-form h1 {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
-.ecommerce {
+.advisor {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-.ecommerce .wrapper-form h1 {
-  color: #d1eafe;
-  text-align: center;
-  margin-top: 100px;
-}
-.ecommerce .wrapper-form .card {
-  width: calc(100% - 110px);
-  margin: 50px auto;
-  border-radius: 50px;
-  background-color: rgba(209, 234, 254, 0.1);
-  padding: 50px 30px;
-  margin-bottom: 100px;
-  padding-left: 80px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.ecommerce .wrapper-form .card .decorator {
-  position: absolute;
-  top: 120px;
-  left: -53px;
-  padding: 0 30px;
-  transform: rotateZ(-90deg);
-  background-color: #fcb549;
-  color: #393a3c;
-  font-weight: bold;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-.ecommerce .wrapper-form .card .left, .ecommerce .wrapper-form .card .right {
+.advisor .wrapper-landing-card .landing-card .left, .advisor .wrapper-landing-card .landing-card .right {
   width: 49%;
 }
-.ecommerce .wrapper-form .card .left {
+.advisor .wrapper-landing-card .landing-card .left {
   text-align: center;
 }
-.ecommerce .wrapper-form .card .left h2 {
+.advisor .wrapper-landing-card .landing-card .left h2 {
   font-size: 20px;
   color: rgba(246, 246, 248, 0.5);
   line-height: 32px;
   font-style: italic;
 }
-.ecommerce .wrapper-form .card .left h2 span {
+.advisor .wrapper-landing-card .landing-card .left h2 span {
   font-size: 25px;
   color: #fcb549;
 }
-.ecommerce .wrapper-form .card .left ul li {
+.advisor .wrapper-landing-card .landing-card .left ul li {
   text-align: left;
 }
-.ecommerce .wrapper-form .card .left .icon {
+.advisor .wrapper-landing-card .landing-card .left .icon {
   width: 100%;
   height: 40px;
 }
-.ecommerce .wrapper-form .card .left .icon svg {
+.advisor .wrapper-landing-card .landing-card .left .icon svg {
   height: 100%;
   width: auto;
   fill: #fcb549;
   transform: rotateZ(180deg);
 }
-.ecommerce .wrapper-form .card .right {
+.advisor .wrapper-landing-card .landing-card .right {
   height: 500px;
   border-radius: 50px;
   overflow: hidden;
 }
-.ecommerce .wrapper-form .card .right iframe {
+.advisor .wrapper-landing-card .landing-card .right iframe {
   width: 100%;
   height: 500px;
 }
-@media screen and (max-width: 1050px) {
-  .ecommerce .wrapper-form .card {
-    width: calc(90% - 110px);
-  }
-}
 @media screen and (max-width: 800px) {
-  .ecommerce .wrapper-form .card {
-    padding: 30px 15px;
-    width: calc(90% - 60px);
-    flex-direction: column;
-  }
-  .ecommerce .wrapper-form .card .decorator {
-    display: none;
-  }
-  .ecommerce .wrapper-form .card .left, .ecommerce .wrapper-form .card .right {
+  .advisor .wrapper-landing-card .landing-card .left, .advisor .wrapper-landing-card .landing-card .right {
     width: 100%;
   }
-  .ecommerce .wrapper-form .card .left {
+  .advisor .wrapper-landing-card .landing-card .left {
     margin-bottom: 30px;
   }
-  .ecommerce .wrapper-form .card .left .icon {
+  .advisor .wrapper-landing-card .landing-card .left .icon {
     transform: rotateZ(90deg);
   }
-  .ecommerce .wrapper-form .card .right {
+  .advisor .wrapper-landing-card .landing-card .right {
     height: 650px;
   }
-  .ecommerce .wrapper-form .card .right iframe {
+  .advisor .wrapper-landing-card .landing-card .right iframe {
     height: 650px;
   }
-  .ecommerce .wrapper-form h1 {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-  }
+}
+
+.digital-course {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

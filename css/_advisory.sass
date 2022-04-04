@@ -1,39 +1,11 @@
-.ecommerce
+.advisor
     position: relative
     width: 100%
     overflow: hidden
 
-    .wrapper-form
-
-        h1
-            color: $color_b
-            text-align: center
-            margin-top: 100px
+    .wrapper-landing-card
         
-        .card
-            width: calc(100% - 110px)
-            margin: 50px auto
-            border-radius: 50px
-            background-color: rgba($color_b, 0.1)
-            padding: 50px 30px
-            margin-bottom: 100px
-            padding-left: 80px
-            position: relative
-            display: flex
-            align-items: center
-            justify-content: space-between
-
-            .decorator
-                position: absolute
-                top: 120px
-                left: -53px
-                padding: 0 30px
-                transform: rotateZ(-90deg)
-                background-color: $color_c
-                color: $color_d
-                font-weight: bold
-                border-bottom-left-radius: 15px
-                border-bottom-right-radius: 15px
+        .landing-card
 
             .left, .right
                 width: 49%
@@ -75,22 +47,9 @@
                     height: 500px
 
 
-
-    @media screen and (max-width: 1050px)
-        .wrapper-form
-            .card
-                width: calc(90% - 110px)
-
-
     @media screen and (max-width: 800px)
-        .wrapper-form
-            .card
-                padding: 30px 15px
-                width: calc(90% - 60px)
-                flex-direction: column
-
-                .decorator
-                    display: none
+        .wrapper-landing-card
+            .landing-card
 
                 .left, .right
                     width: 100%
@@ -106,8 +65,3 @@
 
                     iframe
                         height: 650px
-
-            h1
-                width: 90%
-                margin-right: auto
-                margin-left: auto

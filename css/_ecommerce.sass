@@ -3,7 +3,7 @@
     width: 100%
     overflow: hidden
 
-    .wrapper-form
+    .wrapper-landing-card
 
         fieldset
             border: none
@@ -15,27 +15,8 @@
             text-align: center
             margin-top: 100px
         
-        form
-            width: calc(100% - 110px)
-            margin: 50px auto
-            border-radius: 50px
-            background-color: rgba($color_b, 0.1)
-            padding: 50px 30px
-            margin-bottom: 100px
-            padding-left: 80px
-            position: relative
-
-            .decorator
-                position: absolute
-                top: 120px
-                left: -53px
-                padding: 0 30px
-                transform: rotateZ(-90deg)
-                background-color: $color_c
-                color: $color_d
-                font-weight: bold
-                border-bottom-left-radius: 15px
-                border-bottom-right-radius: 15px
+        .landing-card
+            display: block
 
             .inputs
                 width: 100%
@@ -104,28 +85,12 @@
                 display: block
                 margin-top: 30px
 
-    @media screen and (max-width: 1050px)
-        .wrapper-form
-            form
-                width: calc(90% - 110px)
-
-
     @media screen and (max-width: 600px)
-        .wrapper-form
-            form
-                padding: 30px 15px
-                width: calc(90% - 60px)
-
-                .decorator
-                    display: none
+        .wrapper-landing-card
+            .landing-card
 
                 .inputs
                     flex-direction: column
                 
                     .left, .right
                         width: 100%
-
-            h1
-                width: 90%
-                margin-right: auto
-                margin-left: auto
