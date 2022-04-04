@@ -846,38 +846,38 @@ footer .content address a:hover {
   }
 }
 
-.digital-course .wrapper-landing-card fieldset {
+.course .wrapper-landing-card fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
-.digital-course .wrapper-landing-card h2 {
+.course .wrapper-landing-card h2 {
   color: #fcb549;
   font-style: italic;
   text-align: center;
 }
-.digital-course .wrapper-landing-card .landing-card {
+.course .wrapper-landing-card .landing-card {
   flex-direction: column;
   width: calc(70% - 110px);
 }
-.digital-course .wrapper-landing-card .landing-card label {
+.course .wrapper-landing-card .landing-card label {
   display: block;
   font-size: 14px;
   margin: 10px;
   transition-duration: 0.5s;
   width: 90%;
 }
-.digital-course .wrapper-landing-card .landing-card label:hover {
+.course .wrapper-landing-card .landing-card label:hover {
   margin-left: 20px;
   font-size: 16px;
   font-weight: bold;
   color: #fcb549;
 }
-.digital-course .wrapper-landing-card .landing-card label:hover input, .digital-course .wrapper-landing-card .landing-card label:hover textarea {
+.course .wrapper-landing-card .landing-card label:hover input, .course .wrapper-landing-card .landing-card label:hover textarea {
   margin-left: -10px;
   width: calc(100% - 30px);
 }
-.digital-course .wrapper-landing-card .landing-card label input, .digital-course .wrapper-landing-card .landing-card label textarea {
+.course .wrapper-landing-card .landing-card label input, .course .wrapper-landing-card .landing-card label textarea {
   display: block;
   outline: none;
   border: none;
@@ -890,25 +890,25 @@ footer .content address a:hover {
   padding: 5px 20px;
   transition-duration: 0.5s;
 }
-.digital-course .wrapper-landing-card .landing-card label input:focus, .digital-course .wrapper-landing-card .landing-card label textarea:focus {
+.course .wrapper-landing-card .landing-card label input:focus, .course .wrapper-landing-card .landing-card label textarea:focus {
   font-size: 20px;
 }
-.digital-course .wrapper-landing-card .landing-card label textarea {
+.course .wrapper-landing-card .landing-card label textarea {
   resize: none;
   height: 150px;
 }
-.digital-course .wrapper-landing-card .landing-card input[type=submit] {
+.course .wrapper-landing-card .landing-card input[type=submit] {
   margin: 0 auto;
   display: block;
   margin-top: 30px;
 }
 @media screen and (max-width: 1050px) {
-  .digital-course .wrapper-landing-card .landing-card {
+  .course .wrapper-landing-card .landing-card {
     width: calc(90% - 110px);
   }
 }
 @media screen and (max-width: 800px) {
-  .digital-course .wrapper-landing-card .landing-card {
+  .course .wrapper-landing-card .landing-card {
     width: calc(90% - 60px);
   }
 }
